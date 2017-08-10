@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
     
-<link rel="stylesheet" href="./css/swiper.css">
+<link rel="stylesheet" href="./css/slick-theme.css">
 <script
               src="https://code.jquery.com/jquery-3.2.1.min.js"
               integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -15,67 +15,42 @@
 <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 
 <style>
-    html, body {
-        position: relative;
-        height: 100%;
+    .slick-item {
+        margin:0 15px;
+        background-color: red;width:30vw;height: 400px;
     }
-    body {
-        background-color: #2D2D2D;
-        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-        font-size: 14px;
-        color:#000;
-        margin: 0;
-        padding: 0;
-    }
-    .swiper-container {
-        width: 100%;
-        height: 100%;
-    }
-    .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
 
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-    }
-    </style>
+</style>
 </head>
 <body>
-
-<div class="swiper-container">
-<div class="swiper-wrapper">
-<div class="swiper-slide">Slide 1</div>
-<div class="swiper-slide">Slide 2</div>
+<div class="slick">
+  <div  class="slick-item" >
+              asd
+  </div>
+  <div  class="slick-item" >
+              
+  </div>
+  <div  class="slick-item" >
+              
+  </div>
+    <div  class="slick-item" >
+              asd
+  </div>
+  <div  class="slick-item" >
+              
+  </div>
+  <div  class="slick-item" >
+              
+  </div>
 </div>
-
-<div class="swiper-pagination"></div>
-
-<div class="swiper-button-next"></div>
-<div class="swiper-button-prev"></div>
-</div>
-
-<script src="./js/swiper.js"></script>
-
-<script>
-    var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        spaceBetween: 30
-    });
-    </script>
+<script type="text/javascript">
+$('.slick').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 4
+});
+</script>
 </body>
 </html>
