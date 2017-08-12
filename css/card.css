@@ -3,9 +3,10 @@
 .card {
 	position: relative;
 	float: left;
-	width: 29%;
-	height: 0;
-	margin: 2%;
+	width: 20%;
+	height: 80vh;
+	margin: 4vh;
+	margin-top:10vh;
 	padding-bottom: 20%;
 }
 
