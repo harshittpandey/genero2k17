@@ -162,6 +162,73 @@
 		}	
 		}
 
+			 .btn {
+			border: none;
+			font-family: inherit;
+			font-size: inherit;
+			color: #FFF;
+			background: #2D2D2D;
+			cursor: pointer;
+			padding: 15px 50px;
+			display: inline-block;
+			margin: 10px 20px;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			font-weight: 500;
+			outline: none;
+			position: relative;
+			-webkit-transition: all 0.3s;
+			-moz-transition: all 0.3s;
+			transition: all 0.3s;
+		}
+
+		.btn:after {
+			content: '';
+			position: absolute;
+			z-index: -1;
+			-webkit-transition: all 0.3s;
+			-moz-transition: all 0.3s;
+			transition: all 0.3s;
+		}
+
+		/* Pseudo elements for icons */
+		.btn:before{
+			font-family: 'icomoon';
+			speak: none;
+			font-style: normal;
+			font-weight: normal;
+			font-variant: normal;
+			text-transform: none;
+			line-height: 1;
+			position: relative;
+			-webkit-font-smoothing: antialiased;
+		 }
+		    .btn-6 {
+			color: #fff;
+			background: #226fbe;
+			-webkit-transition: none;
+			-moz-transition: none;
+			transition: none;
+		    }
+
+		    .btn-6:active {
+			   top: 2px;
+		    }
+
+
+
+			 .btn-6e {
+			    border: 2px dashed #2D2D2D;
+			    border-radius: 15px;
+		     }
+
+		     .btn-6e:hover {
+			    background: transparent;
+			    color: #2D2D2D;
+		     }
+
+
+
 	</style>
 	<script>
 	if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
@@ -203,32 +270,32 @@
 							</div>
 							<div class="card__copy">
 								<div class="sw-row">
-									<div class="sw-col l5" style="cursor: pointer;">
+									<div class="sw-col l5"  style="cursor: pointer;border-right:medium #2D2D2D solid;text-align:center ">
 										<p>
 										</p>
-										<p id="techcs-1">
-											<button onclick="techcs_1()">Duet of the Geek Freaks</button>
+										<p id="techcs-1 " >
+											<button class="btn btn-e btn-6e" onclick="techcs_1()" >Duet of the Geek Freaks</button>
 										</p>
-										<p id="techcs-2">
-											<button onclick="techcs_2()">Global Optimal</button>
+										<p id="techcs-2" >
+											<button class="btn btn-e btn-6e" onclick="techcs_2()" >Global Optimal</button>
 										</p>
 										<p id="techcs-3">
-											<button onclick="techcs_3()">Shut the Bug Up</button>
+											<button class="btn btn-e btn-6e" onclick="techcs_3()" >Shut the Bug Up</button>
 										</p>
 										<p id="techcs-4">
-											<button onclick="techcs_4()">No Leisure for Linguistics</button>
+											<button class="btn btn-e btn-6e" onclick="techcs_4()" >No Leisure for Linguistics</button>
 										</p>
 										<p id="techcs-5">
-											<button onclick="techcs_5()">Simply Weblogical</button>
+											<button class="btn btn-e btn-6e" onclick="techcs_5()" >Simply Weblogical</button>
 										</p>
 										<p id="techcs-6">
-											<button onclick="techcs_6()">Hack TREC</button>
+											<button class="btn btn-e btn-6e" onclick="techcs_6()" >Hack TREC</button>
 										</p>
 										<p id="techcs-7">
-											<button onclick="techcs_7()">Al-Khwarizmi Programming Event</button>
+											<button class="btn btn-e btn-6e" onclick="techcs_7()" >Al-Khwarizmi Programming Event</button>
 										</p>
 									</div>
-									<div class="sw-col l7" style="border-left:medium #CC0000 solid; height:750px;">
+									<div class="sw-col l7" >
 										 <div id="techcs-data-1" style="display: none">
 										 	<h2>
 										 		<b>Event Type</b>: Three Round Match
