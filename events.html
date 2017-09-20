@@ -274,25 +274,25 @@
 										<p>
 										</p>
 										<p id="techcs-1 " >
-											<button class="btn btn-e btn-6e" onclick="techcs_1()" >Duel of the Geek Freaks</button>
+											<button class="btn btn-e btn-6e" onclick="showMe('techcs',1)" >Duel of the Geek Freaks</button>
 										</p>
 										<p id="techcs-2" >
-											<button class="btn btn-e btn-6e" onclick="techcs_2()" >Global Optimal</button>
+											<button class="btn btn-e btn-6e" onclick="showMe('techcs',2)" >Global Optimal</button>
 										</p>
 										<p id="techcs-3">
-											<button class="btn btn-e btn-6e" onclick="techcs_3()" >Shut the Bug Up</button>
+											<button class="btn btn-e btn-6e" onclick="showMe('techcs',3)" >Shut the Bug Up</button>
 										</p>
 										<p id="techcs-4">
-											<button class="btn btn-e btn-6e" onclick="techcs_4()" >No Leisure for Linguistics</button>
+											<button class="btn btn-e btn-6e" onclick="showMe('techcs',4)" >No Leisure for Linguistics</button>
 										</p>
 										<p id="techcs-5">
-											<button class="btn btn-e btn-6e" onclick="techcs_5()" >Simply Weblogical</button>
+											<button class="btn btn-e btn-6e" onclick="showMe('techcs',5)" >Simply Weblogical</button>
 										</p>
 										<p id="techcs-6">
-											<button class="btn btn-e btn-6e" onclick="techcs_6()" >Hack TREC</button>
+											<button class="btn btn-e btn-6e" onclick="showMe('techcs',6)" >Hack TREC</button>
 										</p>
 										<p id="techcs-7">
-											<button class="btn btn-e btn-6e" onclick="techcs_7()" >Al-Khwarizmi Programming Event</button>
+											<button class="btn btn-e btn-6e" onclick="showMe('techcs',7)" >Al-Khwarizmi Programming Event</button>
 										</p>
 									</div>
 									<div class="sw-col l7" style="padding-left: 15px">
@@ -940,68 +940,19 @@
 	<!-- JS -->
 
 	<script>
-	function techcs_1() {
-		document.getElementById("techcs-data-1").style.display = "inline";
-	    document.getElementById("techcs-data-2").style.display = "none";
-	    document.getElementById("techcs-data-3").style.display = "none";
-	    document.getElementById("techcs-data-4").style.display = "none";
-	    document.getElementById("techcs-data-5").style.display = "none";
-	    document.getElementById("techcs-data-6").style.display = "none";
-	    document.getElementById("techcs-data-7").style.display = "none";			
-	}
-	function techcs_2() {
-	    document.getElementById("techcs-data-1").style.display = "none";
-	    document.getElementById("techcs-data-2").style.display = "inline";
-	    document.getElementById("techcs-data-3").style.display = "none";
-	    document.getElementById("techcs-data-4").style.display = "none";
-	    document.getElementById("techcs-data-5").style.display = "none";
-	    document.getElementById("techcs-data-6").style.display = "none";
-	    document.getElementById("techcs-data-7").style.display = "none";
-	}
-	function techcs_3() {
-	    document.getElementById("techcs-data-1").style.display = "none";
-	    document.getElementById("techcs-data-2").style.display = "none";
-		document.getElementById("techcs-data-3").style.display = "inline";
-	    document.getElementById("techcs-data-4").style.display = "none";
-	    document.getElementById("techcs-data-5").style.display = "none";
-	    document.getElementById("techcs-data-6").style.display = "none";
-	    document.getElementById("techcs-data-7").style.display = "none";
-	}
-	function techcs_4() {
-	    document.getElementById("techcs-data-1").style.display = "none";
-	    document.getElementById("techcs-data-2").style.display = "none";
-	    document.getElementById("techcs-data-3").style.display = "none";
-		document.getElementById("techcs-data-4").style.display = "inline";
-	    document.getElementById("techcs-data-5").style.display = "none";
-	    document.getElementById("techcs-data-6").style.display = "none";
-	    document.getElementById("techcs-data-7").style.display = "none";
-	}
-	function techcs_5() {
-	    document.getElementById("techcs-data-1").style.display = "none";
-	    document.getElementById("techcs-data-2").style.display = "none";
-	    document.getElementById("techcs-data-3").style.display = "none";
-	    document.getElementById("techcs-data-4").style.display = "none";
-		document.getElementById("techcs-data-5").style.display = "inline";
-	    document.getElementById("techcs-data-6").style.display = "none";
-	    document.getElementById("techcs-data-7").style.display = "none";
-	}
-	function techcs_6() {
-	    document.getElementById("techcs-data-1").style.display = "none";
-	    document.getElementById("techcs-data-2").style.display = "none";
-	    document.getElementById("techcs-data-3").style.display = "none";
-	    document.getElementById("techcs-data-4").style.display = "none";
-	    document.getElementById("techcs-data-5").style.display = "none";
-		document.getElementById("techcs-data-6").style.display = "inline";
-	    document.getElementById("techcs-data-7").style.display = "none";
-	}
-	function techcs_7() {
-	    document.getElementById("techcs-data-1").style.display = "none";
-	    document.getElementById("techcs-data-2").style.display = "none";
-	    document.getElementById("techcs-data-3").style.display = "none";
-	    document.getElementById("techcs-data-4").style.display = "none";
-	    document.getElementById("techcs-data-5").style.display = "none";
-	    document.getElementById("techcs-data-6").style.display = "none";
-		document.getElementById("techcs-data-7").style.display = "inline";
+			var depts={
+		"techcs":7,
+		"techme":8
+	};
+	function showMe(deptName, divId){
+		for(var i = 1;i<=depts[deptName];++i){
+			if(divId==i){
+				document.getElementById(deptName+"-data-"+i).style.display = "inline";
+			}
+			else{
+				document.getElementById(deptName+"-data-"+i).style.display = "none";				
+			}
+		}
 	}
 	</script>
 	<script src="js/vendors/trianglify.min.js"></script>
