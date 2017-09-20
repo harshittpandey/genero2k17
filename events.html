@@ -14,6 +14,7 @@
 	<link rel="stylesheet" type="text/css" href="css/demo.css" />
 	<link rel="stylesheet" type="text/css" href="css/card.css" />
 	<link rel="stylesheet" type="text/css" href="css/pattern.css" />
+
     <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
 
 	<!--[if IE]>
@@ -23,7 +24,144 @@
 	<style type="text/css">
 		body{
 			background-image: url("img/m.jpg"); 
+
 		}
+		.sw-large {
+		    font-size: 24px!important
+		}
+		.sw-small {
+		    font-size: 15px!important
+		}
+        .sw-extra-large {
+		    font-size: 30px!important
+		}
+		.sw-row:after ,.sw-row:before {
+			content: "";
+			display:table;
+			clear: both;
+		}
+		.sw-col{
+			float:left;
+			width: 100%;
+			position: relative;
+		}
+		.sw-col.s1{
+			width: 8.33%;
+		}
+		.sw-col.s2{
+			width: 16.66%;
+		}
+		.sw-col.s3{
+			width: 25%;
+		}
+		.sw-col.s4{
+			width: 33%;
+		}
+		.sw-col.s5{
+			width: 41.63%;
+		}
+		.sw-col.s6{
+			width: 50%;
+		}
+		.sw-col.s7{
+			width: 58.33%;
+		}
+		.sw-col.s8{
+			width: 66.66%;
+		}
+		.sw-col.s9{
+			width: 75%;
+		}
+		.sw-col.s10{
+			width: 83.33%;
+		}
+		.sw-col.s11{
+			width: 91.66%;
+		}
+		.sw-col.s12{
+			width: 100%;
+		}
+
+		@media (min-width: 601px)
+		{
+		.sw-col.m1{
+			width: 8.33%;
+		}
+		.sw-col.m2{
+			width: 16.66%;
+		}
+		.sw-col.m3{
+			width: 25%;
+		}
+		.sw-col.m4{
+			width: 33%;
+		}
+		.sw-col.m5{
+			width: 41.63%;
+		}
+		.sw-col.m6{
+			width: 50%;
+		}
+		.sw-col.m7{
+			width: 58.33%;
+		}
+		.sw-col.m8{
+			width: 66.66%;
+		}
+		.sw-col.m9{
+			width: 75%;
+		}
+		.sw-col.m10{
+			width: 83.33%;
+		}
+		.sw-col.m11{
+			width: 91.66%;
+		}
+		.sw-col.m12{
+			width: 100%;
+		}	
+		}
+
+		@media (min-width: 993px)
+		{
+		.sw-col.l1{
+			width: 8.33%;
+		}
+		.sw-col.l2{
+			width: 16.66%;
+		}
+		.sw-col.l3{
+			width: 25%;
+		}
+		.sw-col.l4{
+			width: 33%;
+		}
+		.sw-col.l5{
+			width: 41.63%;
+		}
+		.sw-col.l6{
+			width: 50%;
+		}
+		.sw-col.l7{
+			width: 58.33%;
+		}
+		.sw-col.l8{
+			width: 66.66%;
+		}
+		.sw-col.l9{
+			width: 75%;
+		}
+		.sw-col.l10{
+			width: 83.33%;
+		}
+		.sw-col.l11{
+			width: 91.66%;
+		}
+		.sw-col.l12{
+			width: 100%;
+		}	
+		}
+
 	</style>
 	<script>
 	if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
@@ -35,22 +173,8 @@
 
 <body class="demo-2" >
 <!-- Navbar -->
-<div class="w3-top" >
-  <div class="w3-bar w3-light-grey w3-card-2">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-text-black" >HOME</a>
-    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-text-black w3-hide-small">###</a>
-    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-text-black w3-hide-small">###</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-text-black w3-hide-small">CONTACT</a>
-  </div>
-</div>
 
-<!-- Navbar on small screens -->
-<div id="navDemo" class="w3-bar-block w3-light-grey w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#band" class="w3-bar-item w3-button w3-padding-large">###</a>
-  <a href="#tour" class="w3-bar-item w3-button w3-padding-large">###</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
-</div>
+<!-- Navbar -->
 
 
 	<div class="container">
@@ -74,34 +198,125 @@
 						<div class="card__content">
 							<i class="card__btn-close fa fa-times"></i>
 							<div class="card__caption">
-								<h2 class="card__title">Card Title</h2>
+								<h2 class="card__title">Tech CS</h2>
 								<p class="card__subtitle">card subtitle</p>
 							</div>
 							<div class="card__copy">
-								<p>
-									Data
-								</p>
-								<p>
-									Data
-								</p>
-								<p>
-									Data
-								</p>
-								<p>
-									Data
-								</p>
-								<p>
-									Data
-								</p>
-								<p>
-									Data
-								</p>
-								<p>
-									Data
-								</p>
-								<p>
-									Data
-								</p>
+								<div class="sw-row">
+									<div class="sw-col l5" style="cursor: pointer;">
+										<p>
+										</p>
+										<p id="techcs-1">
+											<button onclick="techcs_1()">Duet of the Geek Freaks</button>
+										</p>
+										<p id="techcs-2">
+											<button onclick="techcs_2()">Global Optimal</button>
+										</p>
+										<p id="techcs-3">
+											<button onclick="techcs_3()">Shut the Bug Up</button>
+										</p>
+										<p id="techcs-4">
+											<button onclick="techcs_4()">No Leisure for Linguistics</button>
+										</p>
+										<p id="techcs-5">
+											<button onclick="techcs_5()">Simply Weblogical</button>
+										</p>
+										<p id="techcs-6">
+											<button onclick="techcs_6()">Hack TREC</button>
+										</p>
+										<p id="techcs-7">
+											<button onclick="techcs_7()">Al-Khwarizmi Programming Event</button>
+										</p>
+									</div>
+									<div class="sw-col l7" style="border-left:medium #CC0000 solid; height:750px;">
+										 <div id="techcs-data-1" style="display: none">
+										 	<h2>
+										 		<b>Event Type</b>: Three Round Match
+										 	</h2>
+										 	<p class="sw-large">
+										 		<b>Description</b>: Technology based quiz, mind wobbling puzzles and exciting riddles to exercise your brains.
+										 	</p>
+										 	<p class="sw-small">
+										 		<b>Duration</b>: 2.5 – 3 hours
+										 	</p>
+
+										 	<p class="sw-small"><b>Net Rounds Events</b>:</p>
+										 	<ul class="sw-small">
+												<li>Puzzles</li>
+												<li>Techno GK</li>
+												<li>Riddles</li>
+												<li>Rapid Fire Questions</li>
+										 	</ul>
+										 	<p class="sw-small"><b>Round 1:</b></p>
+										 	<ul class="sw-small">
+										 		<li>Riddles</li>
+										 		<li>Puzzles</li>
+									    	</ul>
+									    	<p style="font-size: 12px;margin-left: 10%"><b>Duration:45 + 15(Result Break)minutes</b></p>
+										 	<p class="sw-small"><b>Round 2:</b></p>
+										 	<ul class="sw-small">
+										 		<li>Technological quiz</li>										 		
+									    	</ul>
+									    	<p style="font-size: 12px;margin-left: 10%"><b>Duration:45 minutes</b></p>
+
+										 	<p class="sw-small"><b>Round 3:</b>(3 Teams only would get goodies as Winners)</p>
+										 	<ul class="sw-small">
+										 		<li>Buzzer Round</li>
+										 		<li>Rapid Fire</li>
+									    	</ul>
+									    	<p style="font-size: 12px;margin-left: 10%"><b>Duration:45 minutes</b></p>
+									    	<p class="sw-medium"><b>NO NEGATIVE MARKING</b></p>
+									    	<p class="sw-small"><b>Rules &amp; Regulations:</b></p>
+									    	<ul class="sw-small">
+									    		<li>
+									    			Usage of Internet during the contest is strictly prohibited.
+									    		</li>
+									    		<li>
+									    			No negative marking on submissions.
+									    		</li>
+									    		<li>
+									    			Criteria of judgement would also include total number of submissions.
+									    		</li>
+									    		<li>
+									    			In case of a tie, time would be the factor of resolution.
+									    		</li>
+									    		<li>
+									    			Inter-team communications are not allowed during the Event. In case of urgency, it has to be first notified.
+									    		</li>
+									    	</ul>
+										 </div>
+										 <div id="techcs-data-2" style="display: none">
+										 	<h2>
+										 		data-2
+										 	</h2>
+										 </div>
+										 <div id="techcs-data-3" style="display: none">
+										 	<h2>
+										 		data-3
+										 	</h2>
+										 </div>
+										 <div id="techcs-data-4" style="display: none">
+										 	<h2>
+										 		data-4
+										 	</h2>
+										 </div>	
+										 <div id="techcs-data-5" style="display: none">
+										 	<h2>
+										 		data-5
+										 	</h2>
+										 </div>
+										 <div id="techcs-data-6" style="display: none">
+										 	<h2>
+										 		data-6
+										 	</h2>
+										 </div>
+										 <div id="techcs-data-7" style="display: none">
+										 	<h2>
+										 		data-7
+										 	</h2>
+										 </div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -401,7 +616,70 @@
 								</p>
 								<p>
 									Data
-								</p>				
+								</p>
+								<p>
+									Data
+								</p>
+								<p>
+									Data
+								</p>
+								<p>
+									Data
+								</p>
+								<p>
+									Data
+								</p>
+								<p>
+									Data
+								</p>
+								<p>
+									Data
+								</p>
+								<p>
+									Data
+								</p>
+								<p>
+									Data
+								</p>
+								<p>
+									Data
+								</p>
+								<p>
+									Data
+								</p>
+								<p>
+									Data
+								</p>
+								<p>
+									Data
+								</p>
+								<p>
+									Data
+								</p>
+								<p>
+									Data
+								</p>
+								<p>
+									Data
+								</p>
+								<p>
+									Data
+								</p>
+								<p>
+									Data
+								</p>
+								<p>
+									Data
+								</p>
+								<p>
+									Data
+								</p>
+								<p>
+									Data
+								</p>
+								<p>
+									Data
+								</p>						
 							</div>
 						</div>
 					</div>
@@ -413,17 +691,71 @@
 	<!-- /container -->
 	<!-- JS -->
 
-    <script type="text/javascript">
-    	// Used to toggle the menu on small screens when clicking on the menu button
-		function myFunction() {
-		    var x = document.getElementById("navDemo");
-		    if (x.className.indexOf("w3-show") == -1) {
-		        x.className += " w3-show";
-		    } else { 
-		        x.className = x.className.replace(" w3-show", "");
-		    }
-		}
-    </script>
+	<script>
+	function techcs_1() {
+		document.getElementById("techcs-data-1").style.display = "inline";
+	    document.getElementById("techcs-data-2").style.display = "none";
+	    document.getElementById("techcs-data-3").style.display = "none";
+	    document.getElementById("techcs-data-4").style.display = "none";
+	    document.getElementById("techcs-data-5").style.display = "none";
+	    document.getElementById("techcs-data-6").style.display = "none";
+	    document.getElementById("techcs-data-7").style.display = "none";			
+	}
+	function techcs_2() {
+	    document.getElementById("techcs-data-1").style.display = "none";
+	    document.getElementById("techcs-data-2").style.display = "inline";
+	    document.getElementById("techcs-data-3").style.display = "none";
+	    document.getElementById("techcs-data-4").style.display = "none";
+	    document.getElementById("techcs-data-5").style.display = "none";
+	    document.getElementById("techcs-data-6").style.display = "none";
+	    document.getElementById("techcs-data-7").style.display = "none";
+	}
+	function techcs_3() {
+	    document.getElementById("techcs-data-1").style.display = "none";
+	    document.getElementById("techcs-data-2").style.display = "none";
+		document.getElementById("techcs-data-3").style.display = "inline";
+	    document.getElementById("techcs-data-4").style.display = "none";
+	    document.getElementById("techcs-data-5").style.display = "none";
+	    document.getElementById("techcs-data-6").style.display = "none";
+	    document.getElementById("techcs-data-7").style.display = "none";
+	}
+	function techcs_4() {
+	    document.getElementById("techcs-data-1").style.display = "none";
+	    document.getElementById("techcs-data-2").style.display = "none";
+	    document.getElementById("techcs-data-3").style.display = "none";
+		document.getElementById("techcs-data-4").style.display = "inline";
+	    document.getElementById("techcs-data-5").style.display = "none";
+	    document.getElementById("techcs-data-6").style.display = "none";
+	    document.getElementById("techcs-data-7").style.display = "none";
+	}
+	function techcs_5() {
+	    document.getElementById("techcs-data-1").style.display = "none";
+	    document.getElementById("techcs-data-2").style.display = "none";
+	    document.getElementById("techcs-data-3").style.display = "none";
+	    document.getElementById("techcs-data-4").style.display = "none";
+		document.getElementById("techcs-data-5").style.display = "inline";
+	    document.getElementById("techcs-data-6").style.display = "none";
+	    document.getElementById("techcs-data-7").style.display = "none";
+	}
+	function techcs_6() {
+	    document.getElementById("techcs-data-1").style.display = "none";
+	    document.getElementById("techcs-data-2").style.display = "none";
+	    document.getElementById("techcs-data-3").style.display = "none";
+	    document.getElementById("techcs-data-4").style.display = "none";
+	    document.getElementById("techcs-data-5").style.display = "none";
+		document.getElementById("techcs-data-6").style.display = "inline";
+	    document.getElementById("techcs-data-7").style.display = "none";
+	}
+	function techcs_7() {
+	    document.getElementById("techcs-data-1").style.display = "none";
+	    document.getElementById("techcs-data-2").style.display = "none";
+	    document.getElementById("techcs-data-3").style.display = "none";
+	    document.getElementById("techcs-data-4").style.display = "none";
+	    document.getElementById("techcs-data-5").style.display = "none";
+	    document.getElementById("techcs-data-6").style.display = "none";
+		document.getElementById("techcs-data-7").style.display = "inline";
+	}
+	</script>
 	<script src="js/vendors/trianglify.min.js"></script>
 	<script src="js/vendors/TweenMax.min.js"></script>
 	<script src="js/vendors/ScrollToPlugin.min.js"></script>
